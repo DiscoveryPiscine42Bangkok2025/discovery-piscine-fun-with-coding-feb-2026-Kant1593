@@ -1,0 +1,24 @@
+body{
+    margin: 0px;
+}
+
+table{
+    width:100dvw;
+    height: 100dvh;
+    border-spacing:0px;
+    border-collapse: collapse;
+}
+
+.first_td{
+    width:50%;
+    background-color: rgb(255, 106, 208);
+    border: 2px solid black;
+    border-right:2px solid #949494;
+}
+
+.second_td{
+    width:50%;
+    background-color: rgb(0, 255, 47);
+    border:2px solid black;
+    border-left:2px solid #949494;
+}

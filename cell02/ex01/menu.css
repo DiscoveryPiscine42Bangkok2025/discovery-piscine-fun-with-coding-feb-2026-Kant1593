@@ -1,12 +1,6 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
     background-color: #f5f5f5;
-}
-
-.menu {
-    background-color: #2c3e50;
-    padding: 10px 20px;
+    padding: 40px;
 }
 
 .menu ul {
@@ -15,15 +9,16 @@ body {
     padding: 0;
 }
 
-.menu a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
 .dropdown {
     position: relative;
+    display: inline-block;
+}
+
+.dropdown > a {
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
     display: inline-block;
 }
 
@@ -31,12 +26,14 @@ body {
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 150px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    min-width: 140px;
 }
 
 .dropdown-content a {
     color: #2c3e50;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
 }
 
 .dropdown-content a:hover {

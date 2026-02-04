@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Background</title>
+    <link rel="stylesheet" href="backgroound.css">
+
+</head>
+<body>
+
+    <button id="btn">Click me!</button>
+
+    <script>
+        const button = document.getElementById("btn");
+        let scale = 1;
+
+        button.addEventListener("click", () => {
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+
+            document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+            scale += 0.05;
+            button.style.transform = `scale(${scale})`;
+        });
+    </script>
+
+</body>
+</html>

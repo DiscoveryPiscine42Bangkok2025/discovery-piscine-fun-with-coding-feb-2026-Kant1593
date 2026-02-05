@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Calculator</title>
+</head>
+<body>
+
+    <h2>Basic Calculator</h2>
+
+    <form id="calcForm">
+        <input type="text" id="left" placeholder="Left value">
+
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+
+        <input type="text" id="right" placeholder="Right value">
+
+        <input type="submit" value="Try me!">
+    </form>
+
+    <script>
+        setInterval(function () {
+            alert("Please, use me...");
+        }, 30000);
+
+        document.getElementById("calcForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            var left = document.getElementById("left").value;
+            var right = document.getElementById("right").value;
+            var op = document.getElementById("operator").value;
+
+            if (!isValid(left) || !isValid(right)) {
+                alert("Error :(");
+                return;
+            }
+
+            left = parseInt(left);
+            right = parseInt(right);
+
+
+            if ((op === "/" || op === "%") && right === 0) {
+                alert("It's over 9000!");
+                console.log("It's over 9000!");
+                return;
+            }
+
+            var result;
+
+            switch (op) {
+                case "+":
+                    result = left + right;
+                    break;
+                case "-":
+                    result = left - right;
+                    break;
+                case "*":
+                    result = left * right;
+                    break;
+                case "/":
+                    result = left / right;
+                    break;
+                case "%":
+                    result = left % right;
+                    break;
+            }
+
+            alert(result);
+            console.log(result);
+        });
+
+        function isValid(value) {
+            if (value === "") return false;
+            if (!/^\d+$/.test(value)) return false;
+            return true;
+        }
+    </script>
+
+</body>
+</html>

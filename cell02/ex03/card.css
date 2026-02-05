@@ -1,0 +1,69 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    margin: auto;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+.profile-pic{
+    padding: 0px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.login {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.description {
+    text-align: center;
+    color: gray;
+    padding: 5px;
+}
+
+.location {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.socials {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.socials img {
+    width: 20px;
+    margin: 0 3px;
+}
+
+.contact {
+    background-color: black;
+    padding: 0px;
+}
+
+.contact-link {
+    display: block;          
+    width: 100%;
+    height: 100%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
